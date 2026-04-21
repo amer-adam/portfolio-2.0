@@ -67,24 +67,21 @@ const AboutMe = () => {
                 <div className="grid md:grid-cols-12 mt-9">
                     <div className="md:col-span-5">
                         <p className="text-5xl slide-up-and-fade">
-                            Hi, I&apos;m Tajmirul.
+                            Hi, I&apos;m Adam.
                         </p>
                     </div>
                     <div className="md:col-span-7">
                         <div className="text-lg text-muted-foreground max-w-[450px]">
                             <p className="slide-up-and-fade">
-                                I&apos;m a frontend web developer dedicated to
-                                turning ideas into creative solutions. I
-                                specialize in creating seamless and intuitive
-                                user experiences.
+                                I&apos;m a Software Engineering student dedicated to
+                                turning ideas into high-performance, real-world solutions. I
+                                specialize in designing backend systems, AI pipelines, and interactive web applications.
                             </p>
                             <p className="mt-3 slide-up-and-fade">
-                                My approach focuses on creating scalable,
-                                high-performing solutions tailored to both user
-                                needs and business objectives. By prioritizing
-                                performance, accessibility, and responsiveness,
+                                My approach focuses on creating production-grade tools across C++, Python, and web stacks. By prioritizing
+                                performance optimization and robust system design, 
                                 I strive to deliver experiences that not only
-                                engage users but also drive tangible results.
+                                push technological boundaries but also provide scalable, tangible results.
                             </p>
                         </div>
                     </div>

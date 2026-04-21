@@ -62,12 +62,20 @@ const Experiences = () => {
                             <p className="text-xl text-muted-foreground">
                                 {item.company}
                             </p>
-                            <p className="text-5xl font-anton leading-none mt-3.5 mb-2.5">
+                            <p className="text-5xl font-anton leading-none mt-3.5 mb-2.5 uppercase">
                                 {item.title}
                             </p>
-                            <p className="text-lg text-muted-foreground">
+                            <p className="text-lg text-muted-foreground mb-6">
                                 {item.duration}
                             </p>
+
+                            {item.points && (
+                                <ul className="list-disc list-outside ml-5 space-y-2 text-muted-foreground text-lg max-w-3xl">
+                                    {(item.points as string[]).map((point, i) => (
+                                        <li key={i}>{point}</li>
+                                    ))}
+                                </ul>
+                            )}
                         </div>
                     ))}
                 </div>

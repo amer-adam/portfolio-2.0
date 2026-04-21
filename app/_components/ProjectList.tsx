@@ -19,6 +19,14 @@ const ProjectList = () => {
     const [selectedProject, setSelectedProject] = useState<string | null>(
         PROJECTS[0].slug,
     );
+    const [isMobile, setIsMobile] = useState(false);
+
+    React.useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < 768);
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     // update imageRef.current href based on the cursor hover position
     // also update image position
@@ -116,7 +124,11 @@ const ProjectList = () => {
                         >
                             {PROJECTS.map((project) => (
                                 <Image
-                                    src={project.thumbnail}
+                                    src={
+                                        isMobile
+                                            ? project.thumbnail
+                                            : project.longThumbnail
+                                    }
                                     alt="Project"
                                     width="400"
                                     height="500"

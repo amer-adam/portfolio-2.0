@@ -1,308 +1,179 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'tasmirolislam@gmail.com',
+    email: 'ameradam6a@gmail.com',
 
     emailSubject: "Let's collaborate on a project",
-    emailBody: 'Hi Tajmirul, I am reaching out to you because...',
-
-    oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
-    upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
+    emailBody: 'Hi Adam, I am reaching out to you because...',
+    linkedinProfile: 'https://www.linkedin.com/in/adam-abouraya-7b6401263/',
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Tajmirul' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/tajmirul' },
-    { name: 'facebook', url: 'https://www.facebook.com/tajmirul.2000' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'github', url: 'https://github.com/amer-adam' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/adam-abouraya-7b6401263/' },
 ];
 
 export const MY_STACK = {
     frontend: [
-        {
-            name: 'JavaScript',
-            icon: '/logo/js.png',
-        },
-        {
-            name: 'TypeScript',
-            icon: '/logo/ts.png',
-        },
-        {
-            name: 'React',
-            icon: '/logo/react.png',
-        },
-        {
-            name: 'Next.js',
-            icon: '/logo/next.png',
-        },
-        {
-            name: 'Redux',
-            icon: '/logo/redux.png',
-        },
-        {
-            name: 'Tailwind CSS',
-            icon: '/logo/tailwind.png',
-        },
-        {
-            name: 'GSAP',
-            icon: '/logo/gsap.png',
-        },
-        {
-            name: 'Framer Motion',
-            icon: '/logo/framer-motion.png',
-        },
-        {
-            name: 'Sass',
-            icon: '/logo/sass.png',
-        },
-        {
-            name: 'Bootstrap',
-            icon: '/logo/bootstrap.svg',
-        },
+        { name: 'React', icon: '/logo/react.png' },
+        { name: 'Vue.js', icon: '/logo/vue.png' }, // You may want to drop the vue.png or use placeholder/text
+        { name: 'Flutter', icon: '/logo/flutter.png' },
     ],
     backend: [
-        {
-            name: 'Node.js',
-            icon: '/logo/node.png',
-        },
-        {
-            name: 'NestJS',
-            icon: '/logo/nest.svg',
-        },
-        {
-            name: 'Express.js',
-            icon: '/logo/express.png',
-        },
+        { name: 'Python', icon: '/logo/python.png' },
+        { name: 'C++', icon: '/logo/cpp.png' },
+        { name: 'Java', icon: '/logo/java.png' },
+        { name: 'Node.js', icon: '/logo/node.png' },
+        { name: 'FastAPI', icon: '/logo/fastapi.png' },
     ],
     database: [
-        {
-            name: 'MySQL',
-            icon: '/logo/mysql.svg',
-        },
-        {
-            name: 'PostgreSQL',
-            icon: '/logo/postgreSQL.png',
-        },
-        {
-            name: 'MongoDB',
-            icon: '/logo/mongodb.svg',
-        },
-        {
-            name: 'Prisma',
-            icon: '/logo/prisma.png',
-        },
+        { name: 'PostgreSQL', icon: '/logo/postgreSQL.png' },
+        { name: 'MySQL', icon: '/logo/mysql.svg' },
+        { name: 'MongoDB', icon: '/logo/mongodb.svg' },
+        { name: 'Firestore', icon: '/logo/firebase.png' },
     ],
     tools: [
-        {
-            name: 'Git',
-            icon: '/logo/git.png',
-        },
-        {
-            name: 'Docker',
-            icon: '/logo/docker.svg',
-        },
-        {
-            name: 'AWS',
-            icon: '/logo/aws.png',
-        },
+        { name: 'Docker', icon: '/logo/docker.svg' },
+        { name: 'GitLab CI/CD', icon: '/logo/gitlab.png' },
+        { name: 'Jenkins', icon: '/logo/jenkins.png' },
+        { name: 'Linux', icon: '/logo/linux.png' },
+        { name: 'Tableau', icon: '/logo/tableau.png' },
     ],
 };
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'Electro EV',
-        slug: 'electro-ev',
-        liveUrl: 'https://electroev.co.uk/',
-        year: 2025,
-        description: `
-      A complete agency portfolio platform built for Electro EV to showcase their services, blog content, and product offerings. <br/> <br/>
-      
-      Key Features:<br/>
-      <ul>
-        <li>🛠️ Service Display System: Interactive service showcase with synchronized sliders</li>
-        <li>✍️ Blog Management: SEO-friendly blog with categorization and search</li>
-        <li>🛒 Product Catalog: Organized product display with filtering capabilities</li>
-        <li>📱 Fully Responsive: Optimized for all device sizes</li>
-        <li>⚡ Fast Performance: Optimized Next.js frontend with ISR (Incremental Static Regeneration)</li>
-      </ul><br/>
-      
-      Technical Highlights:
-      <ul>
-        <li>Implemented complex slider synchronization logic using Swiper.js</li>
-        <li>Customized Payload CMS admin panel for intuitive content management</li>
-        <li>Developed reusable UI components with shadcn for design consistency</li>
-        <li>Configured efficient data fetching strategies in Next.js</li>
-      </ul>
-      `,
-        role: `
-      Full-Stack Developer <br/>
-      Owned the entire development lifecycle:
-      <ul>
-        <li>✅ Backend: Configured Payload CMS with custom collections for services, blogs, and products</li>
-        <li>🎨 Frontend: Built all UI components using Tailwind CSS and shadcn</li>
-        <li>🔄 State Management: Implemented client-side data fetching and caching</li>
-        <li>🖥️ CMS Customization: Created admin interfaces for content editors</li>
-        <li>🚀 Deployment: Set up CI/CD pipeline for Vercel hosting</li>
-        <li>🧩 Third-Party Integration: Added Swiper.js for interactive sliders</li>
-      </ul>
-      `,
+        title: 'LexiFlow',
+        slug: 'lexiflow',
         techStack: [
-            'Next.js',
-            'Payload CMS',
-            'Tailwind CSS',
-            'shadcn',
-            'Swiper.js',
-            'React Hook Form',
-            'Vercel',
+            'FastAPI',
+            'Node.js',
+            'Speech Recognition',
+            'Translation APIs',
+            'Python'
         ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp',
-        longThumbnail: '/projects/long/mti-electronics.webp',
+        year: 2026,
+        description: `
+      AI-Powered Mandarin Learning Platform (FYP). <br/> <br/>
+      Built scalable pipeline for multilingual subtitles using modular "pipe-and-filter" architecture. Integrated speech recognition and translation via FastAPI and Node.js.
+      `,
+        role: 'Developer',
+        thumbnail: '/projects/lexiflow/thumb.jpg',
+        longThumbnail: '/projects/lexiflow/long.jpg',
         images: [
-            '/projects/images/mti-electronics-1.webp',
-            '/projects/images/mti-electronics-2.webp',
+            '/projects/lexiflow/image1.jpg',
+            '/projects/lexiflow/image2.jpg',
         ],
     },
     {
-        title: 'Epikcart',
-        slug: 'epikcart',
+        title: 'Aidelle',
+        slug: 'aidelle',
         techStack: [
             'React',
-            'Redux',
-            'React i18n',
-            'Tailwind CSS',
-            'Framer Motion',
-            'debouncing',
-            'Api Integration',
+            'Three.js',
+            'Vite',
+            'Web Speech API',
+            'Camb AI TTS',
+            'Recharts',
+            '@pixiv/three-vrm'
         ],
-        thumbnail: '/projects/thumbnail/epikcart.jpg',
-        longThumbnail: '/projects/long/epikcart.jpg',
+        thumbnail: '/projects/thumbnail/aidelle.png',
+        longThumbnail: '/projects/long/aidelle.png',
         images: [
-            '/projects/images/epikcart-1.png',
-            '/projects/images/epikcart-2.png',
-            '/projects/images/epikcart-3.png',
-            '/projects/images/epikcart-4.png',
-            '/projects/images/epikcart-5.png',
+            '/projects/images/aidelle-1.png',
+            '/projects/images/aidelle-2.png',
+            '/projects/images/aidelle-3.png'
         ],
-        liveUrl: 'https://demo.epikcart.siphertech.com/',
-        year: 2023,
-        description: `Epikcart is a feature-rich, scalable e-commerce platform tailored for large businesses. It features dynamic product filtering, multi-language support with RTL, advanced inventory management, order tracking, and refund systems, offering a comprehensive solution for multi-vendor operations.`,
-        role: `As the frontend developer in a team of five, I: <br/>
-        - Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS.<br/>
-        - Developed dynamic filtering logic for the product search page with admin-configurable parameters.<br/>
-        - Integrated multi-language support with React i18n, including RTL handling.<br/>
-        - Delivered a responsive, user-friendly interface in collaboration with the UI/UX designer.`,
+        sourceCode:  'https://github.com/amer-adam/aidelle',
+        year: 2026,
+        description: `Aidelle is a full-stack, AI-powered health monitoring ecosystem designed to care for elderly users. It integrates wearable smart device biometrics, a Python FastAPI data-sync backend, and a LangGraph-powered AI Agent to provide conversational medical assistance, anomaly detection, and emergency alerting.`,
+        role: `As the frontend developer in a team of three, I: <br/>
+        ● Built the patient and nurse web interfaces from scratch using React 19 and Vite.<br/>
+        ● Integrated a lifelike 3D AI nurse avatar using Three.js and @pixiv/three-vrm, complete with procedural lip-syncing and conversational animations.<br/>
+        ● Implemented two-way voice interactions using the browser's native Web Speech API for input and Camb AI cloud TTS for spoken responses.<br/>
+        ● Developed a comprehensive caregiver dashboard featuring interactive Recharts, live data polling every 5 seconds, and smart sensor management.`
     },
-    {
-        title: 'Resume Roaster',
-        slug: 'resume-roaster',
+{
+        title: 'Google It First!',
+        slug: 'google-it-first',
         techStack: [
-            'GPT-4',
-            'Next.js',
-            'Postgressql',
-            'Prisma',
-            'Tailwind CSS',
+            'JavaScript',
+            'Chrome Extension API',
+            'Manifest V3',
+            'HTML & CSS',
+            'Transformers.js',
+            'DuckDuckGo API'
         ],
-        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
-        longThumbnail: '/projects/long/resume-roaster.jpg',
+        year: 2026,
+        description: `Google It First! is an eco-friendly Chrome Extension built for Earth Day 2026 to reduce the massive water footprint left by unnecessary LLM queries. It actively monitors major AI platforms (ChatGPT, Gemini, Claude, etc.) and intercepts user prompts. Using a local NLP model, it classifies whether a query requires an LLM or can be answered via a traditional search. If a search is sufficient, it displays an interactive overlay with inline DuckDuckGo results, saving data center cooling water. It also features a tracking dashboard and fun "guilt-trip" penalty animations for bypassing.`,
+        role: `As the core extension developer in a team of three, I built the entire extension excluding the NLP model. My contributions included: <br/>
+        - Developing the complete Manifest V3 architecture, including background workers, offscreen documents, and content scripts.<br/>
+        - Building the prompt interception overlay with interactive water-wasting penalty animations and inline DuckDuckGo search results bridging.<br/>
+        - Creating the popup dashboard to track and visualize the milliliters of water saved versus wasted based on user choices.<br/>
+        - Integrating the provided local model script to seamlessly pause and evaluate user inputs across 7 major AI chat platforms.`,
+        thumbnail: '/projects/thumbnail/google-it-first.png',
+        longThumbnail: '/projects/long/google-it-first.png',
         images: [
-            '/projects/images/resume-roaster-1.png',
-            '/projects/images/resume-roaster-2.png',
-            '/projects/images/resume-roaster-3.png',
-        ],
-        liveUrl: 'https://resume-roaster.vercel.app/',
-        year: 2023,
-        description:
-            'Resume Roaster is a web application designed to provide tailored resume feedback and professional writing services. Built with Next.js, PostgreSQL, Prisma, and Tailwind CSS, it integrates GPT-4 for AI-powered recommendations. The platform also includes peer-to-peer reviews with a points-based system, fostering a collaborative and engaging experience. Targeting freshers, experienced professionals, and programmers, it helps optimize resumes for job-specific success.',
-        role: `As the sole developer and business owner, I:<br/>
-        - Designed and developed the platform end-to-end using Next.js, PostgreSQL, Prisma, and Tailwind CSS.<br/>
-        - Integrated GPT-4 for AI-driven feedback and insights.<br/>
-        - Implemented complex SQL queries, including one to identify the top two resumes based on user points.`,
-    },
-    {
-        title: 'Real Estate',
-        slug: 'property-pro',
-        techStack: [
-            'React.js',
-            'Redux',
-            'Tailwind CSS',
-            'React i18n',
-            'Framer Motion',
-        ],
-        thumbnail: '/projects/thumbnail/property-pro.jpg',
-        longThumbnail: '/projects/long/property-pro.jpg',
-        images: [
-            '/projects/images/property-pro-1.png',
-            '/projects/images/property-pro-2.png',
-            '/projects/images/property-pro-3.png',
-        ],
-        liveUrl: 'https://demo.propertypro.siphertech.com/',
-        year: 2023,
-        description:
-            'PropertyPro is a real estate management platform offering users a seamless experience to explore, manage, and view property listings. The application emphasizes accessibility and responsive design, ensuring a smooth interface across devices.',
-        role: `As the frontend developer, I:<br/>
-        - Built the frontend using React, Redux, RTK Query, Framer Motion, and Tailwind CSS.<br/>
-        - Integrated dynamic state management for efficient handling of property data.<br/>
-        - Implemented multi-language support with React i18n to cater to diverse audiences.<br/>
-        - Enhanced user interaction with animations and transitions using Framer Motion.`,
-    },
-    {
-        title: 'Consulting Finance',
-        slug: 'crenotive',
-        techStack: ['HTML', 'CSS & SCSS', 'Javascript', 'Bootstrap'],
-        thumbnail: '/projects/thumbnail/consulting-finance.jpg',
-        longThumbnail: '/projects/long/consulting-finance.jpg',
-        images: [
-            '/projects/images/consulting-finance-1.png',
-            '/projects/images/consulting-finance-2.png',
-            '/projects/images/consulting-finance-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/crenotive',
-        liveUrl: 'https://crenotive.netlify.app/',
-        year: 2023,
-        description:
-            'I developed Crenotive, a portfolio website using Html, SASS, and jQuery to showcase services and expertise. The design focuses on responsive user experience and effective presentation of professional achievements.',
-        role: ``,
-    },
-    {
-        title: 'devLinks',
-        slug: 'devLinks',
-        techStack: ['Next.js', 'Formik', 'Drag & Drop', 'Tailwind CSS'],
-        thumbnail: '/projects/thumbnail/devLinks.jpg',
-        longThumbnail: '/projects/long/devLinks.jpg',
-        images: [
-            '/projects/images/devLinks-1.png',
-            '/projects/images/devLinks-2.png',
-            '/projects/images/devLinks-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/devsLink',
-        liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
-        year: 2023,
-        description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
+            '/projects/images/google-it-first-1.png',
+            '/projects/images/google-it-first-2.png',
+            '/projects/images/google-it-first-3.png',
+            '/projects/images/google-it-first-4.png',
+            '/projects/images/google-it-first-5.png',
+            '/projects/images/google-it-first-6.gif',
 
-            I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
-        role: ``,
+        ],
     },
+    {
+        title: 'Makanplus',
+        slug: 'makanplus',
+        techStack: [
+            'Flutter',
+            'Dart',
+            'Firebase Auth',
+            'Cloud Firestore',
+            'Firebase Storage',
+            'Provider',
+            'REST API'
+        ],
+        thumbnail: '/projects/thumbnail/makanplus.png',
+        longThumbnail: '/projects/long/makanplus.png',
+        images: [
+            '/projects/images/makanplus-1.png',
+        ],
+        sourceCode:  'https://github.com/amer-adam/makanplus',
+        year: 2025,
+        description: `Makanplus is a mobile application built with Flutter and Firebase designed for tracking personal metrics and managing personalized meal plans. The app features secure user authentication, profile customization with image uploads, dynamic meal plan tracking, and device integrations like mapping and content sharing.`,
+        role: `As a core developer in a team of two, I was responsible for the entire application build, excluding the Gemini AI integration. My contributions included: <br/>
+        - Developing the complete frontend interface using Flutter and managing application state with Provider.<br/>
+        - Setting up and integrating the Firebase backend (Auth, Firestore, Storage) from scratch.<br/>
+        - Writing strict Firebase security rules to validate user data (like height/weight metrics) and secure meal plans and profile pictures.<br/>
+        - Implementing native device features using packages like image_picker, maps_launcher, and share_plus.`
+    }
 ];
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
+        title: 'Software Engineering Intern',
+        company: 'ViTrox Technologies Sdn. Bhd.',
+        duration: 'July 2025 - Feb 2026',
+        points: [
+            'Designed and implemented a cross-language networking library (C++ with Java via JNI) for high-throughput TCP/UDP communication.',
+            'Automated large-scale data collection using Python, computer vision, and LLM-driven UI control, reducing turnaround time from ~3 business days to overnight.',
+            'Processed datasets (50K to 20M+ records) and built Tableau dashboards.',
+            'Developed React-based inspection interface and a C++ deployment utility (near-instant execution).',
+            'Introduced unit testing (Catch2) and integrated automated testing into CI/CD pipelines.',
+            'Contributed via GitLab, Jenkins, and Jira in an agile environment.'
+        ]
     },
     {
-        title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
-    },
-    {
-        title: 'Frontend Engineer',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
-    },
-    {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
+        title: 'Software Engineer',
+        company: 'UTM ROBOCON',
+        duration: 'Oct 2022 - Sep 2024',
+        points: [
+            'Developed real-time robotics systems using Python and C++ on embedded platforms.',
+            'Deployed computer vision models (YOLOv10, SAM) on NVIDIA Jetson.',
+            'Integrated ROS2 and micro-ROS for low-latency communication.',
+            'Surpassed 12 countries in 2024 Robocon for image processing FPS, accuracy, and efficiency.'
+        ]
     },
 ];
