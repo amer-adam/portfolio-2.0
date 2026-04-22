@@ -8,7 +8,7 @@ interface RepoStats {
 
 const Footer = async () => {
     const repoStats = await fetch(
-        'https://api.github.com/repos/tajmirul/portfolio-2.0',
+        'https://api.github.com/repos/amer-adam/portfolio-2.0',
         {
             next: {
                 revalidate: 60 * 60, // 1 hour
@@ -30,17 +30,19 @@ const Footer = async () => {
                     {GENERAL_INFO.email}
                 </a>
 
-                <div className="">
-                    <a href='https://github.com/Tajmirul/portfolio-2.0' target="_blank" className="leading-none text-muted-foreground hover:underline hover:text-white">
-                        Design & built by Tajmirul Islam <br />
-                        Revised by Adam Abouraya
-
-                        <div className="flex items-center justify-center gap-5 pt-1">
-                            <span className='flex items-center gap-2'>
-                                <Star size={14} /> {stargazers_count}
+                <div className="mt-10 opacity-60 hover:opacity-100 transition-opacity">
+                    <a
+                        href="https://github.com/amer-adam/portfolio-2.0"
+                        target="_blank"
+                        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                        Forked from Tajmirul Islam. Massive thanks to him for the template!
+                        <div className="flex items-center justify-center gap-4 mt-1.5 opacity-70">
+                            <span className="flex items-center gap-1.5 text-xs">
+                                <Star size={12} /> {stargazers_count}
                             </span>
-                            <span className='flex items-center gap-2'>
-                                <GitFork size={14} /> {forks_count}
+                            <span className="flex items-center gap-1.5 text-xs">
+                                <GitFork size={12} /> {forks_count}
                             </span>
                         </div>
                     </a>

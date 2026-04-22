@@ -156,6 +156,7 @@ export const MY_EXPERIENCE = [
         title: 'Software Engineering Intern',
         company: 'ViTrox Technologies Sdn. Bhd.',
         duration: 'July 2025 - Feb 2026',
+        teamPhoto: '/experience/vitrox-team.jpg',
         points: [
             'Designed and implemented a cross-language networking library (C++ with Java via JNI) for high-throughput TCP/UDP communication.',
             'Automated large-scale data collection using Python, computer vision, and LLM-driven UI control, reducing turnaround time from ~3 business days to overnight.',
@@ -169,6 +170,7 @@ export const MY_EXPERIENCE = [
         title: 'Software Engineer',
         company: 'UTM ROBOCON',
         duration: 'Oct 2022 - Sep 2024',
+        teamPhoto: '/experience/robocon-team.jpg',
         points: [
             'Developed real-time robotics systems using Python and C++ on embedded platforms.',
             'Deployed computer vision models (YOLOv10, SAM) on NVIDIA Jetson.',
