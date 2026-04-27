@@ -171,7 +171,7 @@ const ProjectDetails = ({ project }: Props) => {
                             )}
                         </div>
 
-                        <ArrowAnimation />
+                        {project.images.length > 0 && <ArrowAnimation />}
                     </div>
                 </div>
 
@@ -179,26 +179,36 @@ const ProjectDetails = ({ project }: Props) => {
                     className="fade-in-later relative flex flex-col gap-2 max-w-[800px] mx-auto"
                     id="images"
                 >
-                    {project.images.map((image) => (
-                        <div
-                            key={image}
-                            className="group relative w-full aspect-[750/400] bg-background-light"
-                            style={{
-                                backgroundImage: `url(${image})`,
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center 50%',
-                                backgroundRepeat: 'no-repeat',
-                            }}
-                        >
-                            <a
-                                href={image}
-                                target="_blank"
-                                className="absolute top-4 right-4 bg-background/70 text-foreground size-12 inline-flex justify-center items-center transition-all opacity-0 hover:bg-primary hover:text-primary-foreground group-hover:opacity-100"
+                    {project.images.length > 0 ? (
+                        project.images.map((image) => (
+                            <div
+                                key={image}
+                                className="group relative w-full aspect-[750/400] bg-background-light"
+                                style={{
+                                    backgroundImage: `url(${image})`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center 50%',
+                                    backgroundRepeat: 'no-repeat',
+                                }}
                             >
-                                <ExternalLink />
-                            </a>
+                                <a
+                                    href={image}
+                                    target="_blank"
+                                    className="absolute top-4 right-4 bg-background/70 text-foreground size-12 inline-flex justify-center items-center transition-all opacity-0 hover:bg-primary hover:text-primary-foreground group-hover:opacity-100"
+                                >
+                                    <ExternalLink />
+                                </a>
+                            </div>
+                        ))
+                    ) : project.isProgress ? (
+                        <div className="w-full aspect-video bg-background-light flex flex-col items-center justify-center text-muted-foreground border border-dashed border-muted-foreground/30 rounded-xl">
+                            <p className="text-2xl font-anton">COMING SOON</p>
+                            <p className="text-sm">
+                                Project photos and more details are being
+                                prepared.
+                            </p>
                         </div>
-                    ))}
+                    ) : null}
                 </div>
             </div>
         </section>

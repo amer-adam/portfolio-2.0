@@ -54,16 +54,15 @@ export const PROJECTS: IProject[] = [
         ],
         year: 2026,
         description: `
-      AI-Powered Mandarin Learning Platform (FYP). <br/> <br/>
-      Built scalable pipeline for multilingual subtitles using modular "pipe-and-filter" architecture. Integrated speech recognition and translation via FastAPI and Node.js.
+      AI-Powered Mandarin Learning Platform (FYP) <span className="text-primary">(Still in progress)</span>. <br/> <br/>
+      Built scalable pipeline for multilingual subtitles using modular "pipe-and-filter" architecture. Integrated speech recognition and translation via FastAPI and Node.js. <br/> <br/>
+      More details regarding LexiFlow and project photos will be added soon.
       `,
         role: 'Developer',
-        thumbnail: '/projects/lexiflow/thumb.jpg',
-        longThumbnail: '/projects/lexiflow/long.jpg',
-        images: [
-            '/projects/lexiflow/image1.jpg',
-            '/projects/lexiflow/image2.jpg',
-        ],
+        isProgress: true,
+        thumbnail: '',
+        longThumbnail: '',
+        images: [],
     },
     {
         title: 'Aidelle',

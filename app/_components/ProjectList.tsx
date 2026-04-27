@@ -117,35 +117,41 @@ const ProjectList = () => {
                 <SectionTitle title="SELECTED PROJECTS" />
 
                 <div className="group/projects relative" ref={containerRef}>
-                    {selectedProject !== null && (
-                        <div
-                            className="max-md:hidden absolute right-0 top-0 z-[1] pointer-events-none w-[200px] xl:w-[350px] aspect-[3/4] overflow-hidden opacity-0"
-                            ref={imageContainer}
-                        >
-                            {PROJECTS.map((project) => (
-                                <Image
-                                    src={
-                                        isMobile
-                                            ? project.thumbnail
-                                            : project.longThumbnail
-                                    }
-                                    alt="Project"
-                                    width="400"
-                                    height="500"
-                                    className={cn(
-                                        'absolute inset-0 transition-all duration-500 w-full h-full object-cover',
-                                        {
-                                            'opacity-0':
-                                                project.slug !==
-                                                selectedProject,
-                                        },
-                                    )}
-                                    ref={imageRef}
-                                    key={project.slug}
-                                />
-                            ))}
-                        </div>
-                    )}
+                    {selectedProject !== null &&
+                        PROJECTS.find((p) => p.slug === selectedProject)
+                            ?.thumbnail && (
+                            <div
+                                className="max-md:hidden absolute right-0 top-0 z-[1] pointer-events-none w-[200px] xl:w-[350px] aspect-[3/4] overflow-hidden opacity-0"
+                                ref={imageContainer}
+                            >
+                                {PROJECTS.map((project) => {
+                                    const imageSrc = isMobile
+                                        ? project.thumbnail
+                                        : project.longThumbnail;
+
+                                    if (!imageSrc) return null;
+
+                                    return (
+                                        <Image
+                                            src={imageSrc}
+                                            alt="Project"
+                                            width="400"
+                                            height="500"
+                                            className={cn(
+                                                'absolute inset-0 transition-all duration-500 w-full h-full object-cover',
+                                                {
+                                                    'opacity-0':
+                                                        project.slug !==
+                                                        selectedProject,
+                                                },
+                                            )}
+                                            ref={imageRef}
+                                            key={project.slug}
+                                        />
+                                    );
+                                })}
+                            </div>
+                        )}
 
                     <div
                         className="flex flex-col max-md:gap-10"
